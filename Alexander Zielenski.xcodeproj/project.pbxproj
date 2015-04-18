@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA416ABD1ADDB56D00249282 /* CarouselContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA416ABC1ADDB56D00249282 /* CarouselContent.plist */; };
+		FA416ABD1ADDB56D00249282 /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA416ABC1ADDB56D00249282 /* Content.plist */; };
 		FA416AC61ADDD61D00249282 /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AC51ADDD61D00249282 /* ZKSwizzle.m */; };
 		FA416AC91ADDD6A500249282 /* ZeppelinPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AC81ADDD6A500249282 /* ZeppelinPreview.m */; };
 		FA416ACF1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416ACE1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift */; };
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA416ABC1ADDB56D00249282 /* CarouselContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CarouselContent.plist; sourceTree = "<group>"; };
+		FA416ABC1ADDB56D00249282 /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
 		FA416AC41ADDD61D00249282 /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSwizzle.h; sourceTree = "<group>"; };
 		FA416AC51ADDD61D00249282 /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSwizzle.m; sourceTree = "<group>"; };
 		FA416AC71ADDD6A500249282 /* ZeppelinPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZeppelinPreview.h; path = demo/ZeppelinPreview.h; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				FA416AD01ADDDC5500249282 /* NSObject+PerformSelector.h */,
 				FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */,
 				FA416AC31ADDD61D00249282 /* ZKSwizzle */,
-				FA416ABC1ADDB56D00249282 /* CarouselContent.plist */,
+				FA416ABC1ADDB56D00249282 /* Content.plist */,
 				FA548F3E1ADD581F0041CB6E /* AppDelegate.swift */,
 				FA548F401ADD581F0041CB6E /* MasterViewController.swift */,
 				FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */,
@@ -253,7 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEDE1FE1AE283E9006E44C3 /* Screenshots.xcassets in Resources */,
-				FA416ABD1ADDB56D00249282 /* CarouselContent.plist in Resources */,
+				FA416ABD1ADDB56D00249282 /* Content.plist in Resources */,
 				FA548F461ADD58200041CB6E /* Main.storyboard in Resources */,
 				FA548F4B1ADD58200041CB6E /* LaunchScreen.xib in Resources */,
 				FA548F481ADD58200041CB6E /* Images.xcassets in Resources */,

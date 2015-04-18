@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>items</key>
+	<key>projects</key>
 	<array>
 		<dict>
 			<key>cells</key>
@@ -45,7 +45,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>Zeppelin is a twaek for jailbroken iOS devices to theme carrier logos. It is available in the ModMyI Repository on Cydia and is free and Open Source. I first started making Zeppelin in January 2012 and released it January 31st, 2012. It has since become a staple of jailbreaking and can be found on installed most user&apos;s iPhones or iPads.</string>
+					<string>Zeppelin is a twaek for jailbroken iOS devices to theme carrier logos. It is available in the ModMyI Repository on Cydia and is free and Open Source.   I first started making Zeppelin in January 2012 and released it January 31st, 2012. It has since become a staple of jailbreaking and can be found on installed most user&apos;s iPhones or iPads with thousands of Addons of Carrier Logo packs avaialble in Cydia.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -186,7 +186,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>optool is something I made to allow developers to link libraries to their executables post-build. It also enables removal of linkages, removal of aslr, removal of code signatures, and removal of __RESTRICT segments on binaries. I created optool for myself so I could insert a dylib into Foundation and in turn have most processes on my system compromised with a library to get an ad-hoc CydiaSubstrate-like injection platform for myself.</string>
+					<string>optool is something I made to allow developers to link libraries to their executables post-build. It also enables removal of linkages, removal of aslr, removal of code signatures, and removal of __RESTRICT segments on binaries.  I created optool for myself so I could insert a dylib into Foundation and in turn have most processes on my system compromised with a library to get an ad-hoc CydiaSubstrate-like injection platform for myself.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -339,7 +339,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>ThemeEngine is an application for OS X which shows an easy-to-use interface for editing Apple&apos;s proprietary .car file format. Car files are used as the primary mechanism for which user interface assets are stored such as colors, styles, window gradients, button images, etc. ThemeEngine&apos;s main purpose is to allow users to create themes for OS X and iOS by customizing the car files directly and replacing the default system ones. It features export to/import from Photoshop support, an interactive gradient editor, style effect layer editing, and more.</string>
+					<string>ThemeEngine is an application for OS X which shows an easy-to-use interface for editing Apple&apos;s proprietary .car file format. Car files are used as the primary mechanism for which user interface assets are stored such as colors, styles, window gradients, button images, etc.  ThemeEngine&apos;s main purpose is to allow users to create themes for OS X and iOS by customizing the car files directly and replacing the default system ones. It features export to/import from Photoshop support, an interactive gradient editor, style effect layer editing, and more.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -407,6 +407,32 @@
 			<string></string>
 			<key>on</key>
 			<string></string>
+		</dict>
+	</array>
+	<key>about</key>
+	<array>
+		<dict>
+			<key>cells</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Name</string>
+					<key>detail</key>
+					<string>Alexander S. Zielenski</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Age</string>
+					<key>detail</key>
+					<string>19</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+			</array>
+			<key>image</key>
+			<string>AboutHeader</string>
 		</dict>
 	</array>
 </dict>

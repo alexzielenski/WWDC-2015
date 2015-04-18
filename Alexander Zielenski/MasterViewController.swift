@@ -10,6 +10,8 @@ import UIKit
 
 class MasterViewController: UITableViewController {
     @IBOutlet var header: UIView!
+    private let content = NSDictionary(contentsOfURL: NSBundle.mainBundle().URLForResource("Content", withExtension: "plist")!)!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -42,6 +44,14 @@ class MasterViewController: UITableViewController {
     
     @IBAction func openGitHub(sender: UIBarButtonItem?) {
         UIApplication.sharedApplication().openURL(NSURL(string: "http://github.com/alexzielenski")!)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "projects" || segue.identifier == "about" {
+            (segue.destinationViewController as! UIViewController).title = segue.identifier?.capitalizedString
+            let items = content[segue.identifier!] as! [AnyObject]
+            (segue.destinationViewController as! ProjectsTableViewController).items = items
+        }
     }
 }
 

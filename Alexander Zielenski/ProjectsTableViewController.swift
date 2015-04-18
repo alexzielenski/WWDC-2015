@@ -9,8 +9,7 @@
 import UIKit
 
 class ProjectsTableViewController: UITableViewController {
-    private static let content = NSDictionary(contentsOfURL: NSBundle.mainBundle().URLForResource("CarouselContent", withExtension: "plist")!)!
-    private let items = content["items"] as! [AnyObject]
+    var items:[AnyObject] = []
     private var currentCells: [Dictionary<String, AnyObject>] = []
     
     override func viewDidLoad() {
@@ -30,6 +29,10 @@ class ProjectsTableViewController: UITableViewController {
         
         let oldPageItem: AnyObject = oldPage >= 0 ? items[oldPage] : []
         let pageItem: AnyObject = items[page]
+        
+        if (pageItem["cells"] == nil) {
+            return;
+        }
         
         tableView.beginUpdates()
         var deletePaths: [NSIndexPath] = []
