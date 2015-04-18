@@ -45,7 +45,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>Zeppelin is a twaek for jailbroken iOS devices to theme carrier logos. It is available in the ModMyI Repository on Cydia and is free and Open Source.   I first started making Zeppelin in January 2012 and released it January 31st, 2012. It has since become a staple of jailbreaking and can be found on installed most user&apos;s iPhones or iPads with thousands of Addons of Carrier Logo packs avaialble in Cydia.</string>
+					<string>Zeppelin is a tweak for jailbroken iOS devices to theme carrier logos. It is available in the ModMyI Repository on Cydia and is free and Open Source.   I first started making Zeppelin in January 2012 and released it January 31st, 2012. It has since become a staple of jailbreaking and can be found on installed most user&apos;s iPhones or iPads with thousands of Addons of Carrier Logo packs avaialble in Cydia.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -361,53 +361,6 @@
 			<key>on</key>
 			<string></string>
 		</dict>
-		<dict>
-			<key>cells</key>
-			<array>
-				<dict>
-					<key>class</key>
-					<string>detail</string>
-					<key>detail</key>
-					<string>OS X</string>
-					<key>title</key>
-					<string>Platform</string>
-				</dict>
-				<dict>
-					<key>class</key>
-					<string>detail</string>
-					<key>detail</key>
-					<string>Tweak</string>
-					<key>title</key>
-					<string>Kind</string>
-				</dict>
-				<dict>
-					<key>class</key>
-					<string>link</string>
-					<key>detail</key>
-					<string>alexzielenski/dockify_library</string>
-					<key>title</key>
-					<string>Source</string>
-					<key>url</key>
-					<string>http://github.com/alexzielenski/dockify_library</string>
-				</dict>
-				<dict>
-					<key>class</key>
-					<string>text</string>
-					<key>detail</key>
-					<string>Dockify is a SIMBL plugin for Mac OS X Mavericks and Yosemite which loads into the Dock application to replicate the theming of dock skins that was formerly possible with previous versions of OS X. It supports custom 3D docks, 2D docks, and &quot;Wide&quot; docks which span the width fo the screen along with many miscellaneous customization options.</string>
-					<key>title</key>
-					<string>Description</string>
-				</dict>
-			</array>
-			<key>image</key>
-			<string>dockifyHeader</string>
-			<key>title</key>
-			<string></string>
-			<key>off</key>
-			<string></string>
-			<key>on</key>
-			<string></string>
-		</dict>
 	</array>
 	<key>about</key>
 	<array>
@@ -439,6 +392,30 @@
 					<string>Current Jam</string>
 					<key>url</key>
 					<string>https://open.spotify.com/track/1OCYw0njNENFpNXtQ8LTuS</string>
+				</dict>
+				<dict>
+					<key>detail</key>
+					<string>Cornell University Engineering &apos;18</string>
+					<key>class</key>
+					<string>detail</string>
+					<key>title</key>
+					<string>School</string>
+				</dict>
+				<dict>
+					<key>detail</key>
+					<string>Snowboarding at Killington, VT</string>
+					<key>class</key>
+					<string>detail</string>
+					<key>title</key>
+					<string>Hobby</string>
+				</dict>
+				<dict>
+					<key>detail</key>
+					<string>Most of my open source projects are based on things that I&apos;ve reverse-engineered. I love taking apart software, seeing how it works, and doing something totally different and unintended with it.   A fun application of this is to create libraries which allow users to customize their iOS and OS X devices to make them more personal, to restore a sense of self in a world of conformity.</string>
+					<key>class</key>
+					<string>text</string>
+					<key>title</key>
+					<string>Interests</string>
 				</dict>
 			</array>
 			<key>image</key>

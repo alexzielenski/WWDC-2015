@@ -12,6 +12,8 @@ class CarouselCell: UITableViewCell, CarouselDelegate {
     @IBOutlet var carousel: Carousel!
     @IBOutlet var leftArrowButton: UIButton!
     @IBOutlet var rightArrowButton: UIButton!
+    @IBOutlet var titleLabel: UILabel?
+    
     var callBack: ((cell: CarouselCell, didPage: Int) -> ())?
     var previewsEnabled = true
     
@@ -27,6 +29,15 @@ class CarouselCell: UITableViewCell, CarouselDelegate {
     
     deinit {
         callBack = nil
+    }
+    
+    override var textLabel: UILabel? {
+        get {
+            return titleLabel
+        }
+        set {
+            titleLabel = newValue
+        }
     }
     
     private func _setup() {

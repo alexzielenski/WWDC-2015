@@ -143,7 +143,7 @@ class ProjectsTableViewController: UITableViewController {
             
             (cell as! CarouselCell).carousel.entries = cells
             (cell as! CarouselCell).carousel.ratio = 1.0 / 3.0
-            
+            cell.textLabel?.text = currentItem["title"] as? String
             (cell as! CarouselCell).carousel.tapHandler = {
                 [weak self]
                 (entry) in
@@ -151,8 +151,8 @@ class ProjectsTableViewController: UITableViewController {
                 let images = (cell as! CarouselCell).carousel.images as NSArray
                 let sender = NSDictionary(objectsAndKeys: entry.image!, "current" as NSString, images, "images" as NSString)
                 self?.performSegueWithIdentifier("imagePreview", sender: sender)
-                
             }
+            cell.frame.size.height = 230
         } else if (cls == "text") {
             cell.textLabel?.text = currentItem["title"] as? String
             cell.detailTextLabel?.text = currentItem["detail"] as? String

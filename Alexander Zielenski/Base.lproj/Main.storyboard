@@ -232,6 +232,79 @@
                                     <outlet property="rightArrowButton" destination="nyo-ww-bz5" id="lSf-9K-wg3"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="gallery" rowHeight="230" id="J0c-V9-Ug2" customClass="CarouselCell" customModule="Alexander_Zielenski" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J0c-V9-Ug2" id="P4M-PQ-4Ja">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csM-Ka-oDo">
+                                            <rect key="frame" x="560" y="117" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="32" id="Cd7-Fn-63Z"/>
+                                                <constraint firstAttribute="height" constant="32" id="dMI-wA-jna"/>
+                                            </constraints>
+                                            <state key="normal" image="RightArrow">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="changePage:" destination="J0c-V9-Ug2" eventType="touchUpInside" id="EJH-De-yV2"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-Oc-UvX">
+                                            <rect key="frame" x="8" y="117" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="KXg-Ld-LTJ"/>
+                                                <constraint firstAttribute="width" constant="32" id="woa-al-Ybd"/>
+                                            </constraints>
+                                            <state key="normal" image="LeftArrow">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="changePage:" destination="J0c-V9-Ug2" eventType="touchUpInside" id="V3q-hO-7Oo"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-va-NRj">
+                                            <rect key="frame" x="16" y="16" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2W-hV-l2b" customClass="Carousel" customModule="Alexander_Zielenski" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="45" width="584" height="176"/>
+                                            <color key="backgroundColor" red="0.098039215690000001" green="0.1647058824" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="167" id="FBB-ZK-1lv"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="584" id="kcx-iJ-IOT"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="kcx-iJ-IOT"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1647058824" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="csM-Ka-oDo" firstAttribute="trailing" secondItem="P4M-PQ-4Ja" secondAttribute="trailingMargin" id="Fcg-Xw-5wz"/>
+                                        <constraint firstItem="QKw-va-NRj" firstAttribute="leading" secondItem="P4M-PQ-4Ja" secondAttribute="leadingMargin" constant="8" id="Fke-Bh-7h1"/>
+                                        <constraint firstItem="G2W-hV-l2b" firstAttribute="trailing" secondItem="P4M-PQ-4Ja" secondAttribute="trailingMargin" id="JYi-Bd-V0Z"/>
+                                        <constraint firstItem="G2W-hV-l2b" firstAttribute="leading" secondItem="P4M-PQ-4Ja" secondAttribute="leadingMargin" id="TPj-VD-XkQ"/>
+                                        <constraint firstItem="G2W-hV-l2b" firstAttribute="bottom" secondItem="P4M-PQ-4Ja" secondAttribute="bottomMargin" id="fIO-X3-4Vp"/>
+                                        <constraint firstItem="Wgw-Oc-UvX" firstAttribute="leading" secondItem="P4M-PQ-4Ja" secondAttribute="leadingMargin" id="iVU-iV-vqc"/>
+                                        <constraint firstItem="QKw-va-NRj" firstAttribute="top" secondItem="P4M-PQ-4Ja" secondAttribute="topMargin" constant="8" id="qVu-KS-4hk"/>
+                                        <constraint firstItem="G2W-hV-l2b" firstAttribute="centerY" secondItem="csM-Ka-oDo" secondAttribute="centerY" id="skd-2K-YSa"/>
+                                        <constraint firstItem="G2W-hV-l2b" firstAttribute="top" secondItem="QKw-va-NRj" secondAttribute="bottom" constant="8" symbolic="YES" id="w9D-uF-cvB"/>
+                                        <constraint firstItem="G2W-hV-l2b" firstAttribute="centerY" secondItem="Wgw-Oc-UvX" secondAttribute="centerY" id="xy6-vn-UFK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="carousel" destination="G2W-hV-l2b" id="EMK-5u-2Sh"/>
+                                    <outlet property="leftArrowButton" destination="Wgw-Oc-UvX" id="bfe-Bp-Opv"/>
+                                    <outlet property="rightArrowButton" destination="csM-Ka-oDo" id="TYS-cZ-RIs"/>
+                                    <outlet property="titleLabel" destination="QKw-va-NRj" id="Nw4-GW-g7W"/>
+                                </connections>
+                            </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="detail" textLabel="pxd-lT-RoQ" detailTextLabel="aKG-Bf-wlQ" style="IBUITableViewCellStyleValue1" id="Dyv-rh-RKR">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dyv-rh-RKR" id="9tv-7d-8rc">

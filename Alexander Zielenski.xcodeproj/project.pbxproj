@@ -25,6 +25,7 @@
 		FA9AEB951ADD664900A9287C /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */; };
 		FA9AEB971ADD6D4900A9287C /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB961ADD6D4900A9287C /* Carousel.swift */; };
 		FAEDE1FE1AE283E9006E44C3 /* Screenshots.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */; };
+		FAEDE2001AE2F86F006E44C3 /* CarouselEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDE1FF1AE2F86F006E44C3 /* CarouselEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
 		FA9AEB961ADD6D4900A9287C /* Carousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Carousel.swift; path = views/Carousel.swift; sourceTree = "<group>"; };
 		FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Screenshots.xcassets; sourceTree = "<group>"; };
+		FAEDE1FF1AE2F86F006E44C3 /* CarouselEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarouselEntry.swift; path = views/CarouselEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				FA416AD81ADDEEC600249282 /* TextCell.swift */,
 				FA416ADA1ADDEED300249282 /* LinkCell.swift */,
 				FA9AEB961ADD6D4900A9287C /* Carousel.swift */,
+				FAEDE1FF1AE2F86F006E44C3 /* CarouselEntry.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				FA416AD21ADDDC5500249282 /* NSObject+PerformSelector.m in Sources */,
 				FA416ADB1ADDEED300249282 /* LinkCell.swift in Sources */,
 				FA87D04A1ADEFEEF00A74D0D /* ImagePreviewController.swift in Sources */,
+				FAEDE2001AE2F86F006E44C3 /* CarouselEntry.swift in Sources */,
 				FA416ACF1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift in Sources */,
 				FA416AC61ADDD61D00249282 /* ZKSwizzle.m in Sources */,
 				FA416AC91ADDD6A500249282 /* ZeppelinPreview.m in Sources */,
