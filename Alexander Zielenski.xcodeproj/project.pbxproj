@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA416ABD1ADDB56D00249282 /* CarouselContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA416ABC1ADDB56D00249282 /* CarouselContent.plist */; };
+		FA416AC61ADDD61D00249282 /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AC51ADDD61D00249282 /* ZKSwizzle.m */; };
+		FA416AC91ADDD6A500249282 /* ZeppelinPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AC81ADDD6A500249282 /* ZeppelinPreview.m */; };
+		FA416ACF1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416ACE1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift */; };
+		FA416AD21ADDDC5500249282 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */; };
+		FA416AD71ADDEE9900249282 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416AD61ADDEE9900249282 /* CarouselCell.swift */; };
+		FA416AD91ADDEEC600249282 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416AD81ADDEEC600249282 /* TextCell.swift */; };
+		FA416ADB1ADDEED300249282 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416ADA1ADDEED300249282 /* LinkCell.swift */; };
 		FA548F3F1ADD581F0041CB6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA548F3E1ADD581F0041CB6E /* AppDelegate.swift */; };
 		FA548F411ADD581F0041CB6E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA548F401ADD581F0041CB6E /* MasterViewController.swift */; };
-		FA548F431ADD58200041CB6E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA548F421ADD58200041CB6E /* DetailViewController.swift */; };
 		FA548F461ADD58200041CB6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA548F441ADD58200041CB6E /* Main.storyboard */; };
 		FA548F481ADD58200041CB6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA548F471ADD58200041CB6E /* Images.xcassets */; };
 		FA548F4B1ADD58200041CB6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA548F491ADD58200041CB6E /* LaunchScreen.xib */; };
 		FA548F571ADD58200041CB6E /* Alexander_ZielenskiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA548F561ADD58200041CB6E /* Alexander_ZielenskiTests.swift */; };
+		FA87D04A1ADEFEEF00A74D0D /* ImagePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */; };
+		FA9AEB951ADD664900A9287C /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */; };
+		FA9AEB971ADD6D4900A9287C /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB961ADD6D4900A9287C /* Carousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +37,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA416ABC1ADDB56D00249282 /* CarouselContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CarouselContent.plist; sourceTree = "<group>"; };
+		FA416AC41ADDD61D00249282 /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSwizzle.h; sourceTree = "<group>"; };
+		FA416AC51ADDD61D00249282 /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSwizzle.m; sourceTree = "<group>"; };
+		FA416AC71ADDD6A500249282 /* ZeppelinPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZeppelinPreview.h; path = demo/ZeppelinPreview.h; sourceTree = "<group>"; };
+		FA416AC81ADDD6A500249282 /* ZeppelinPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZeppelinPreview.m; path = demo/ZeppelinPreview.m; sourceTree = "<group>"; };
+		FA416ACD1ADDDA2000249282 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		FA416ACE1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProjectsTableViewController+Triggers.swift"; sourceTree = "<group>"; };
+		FA416AD01ADDDC5500249282 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PerformSelector.h"; path = "categories/NSObject+PerformSelector.h"; sourceTree = "<group>"; };
+		FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PerformSelector.m"; path = "categories/NSObject+PerformSelector.m"; sourceTree = "<group>"; };
+		FA416AD61ADDEE9900249282 /* CarouselCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarouselCell.swift; path = views/CarouselCell.swift; sourceTree = "<group>"; };
+		FA416AD81ADDEEC600249282 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextCell.swift; path = views/TextCell.swift; sourceTree = "<group>"; };
+		FA416ADA1ADDEED300249282 /* LinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkCell.swift; path = views/LinkCell.swift; sourceTree = "<group>"; };
 		FA548F391ADD581F0041CB6E /* Alexander Zielenski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alexander Zielenski.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA548F3D1ADD581F0041CB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA548F3E1ADD581F0041CB6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA548F401ADD581F0041CB6E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		FA548F421ADD58200041CB6E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FA548F451ADD58200041CB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA548F471ADD58200041CB6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA548F4A1ADD58200041CB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FA548F501ADD58200041CB6E /* Alexander ZielenskiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alexander ZielenskiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA548F551ADD58200041CB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA548F561ADD58200041CB6E /* Alexander_ZielenskiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alexander_ZielenskiTests.swift; sourceTree = "<group>"; };
+		FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewController.swift; sourceTree = "<group>"; };
+		FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
+		FA9AEB961ADD6D4900A9287C /* Carousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Carousel.swift; path = views/Carousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA416AC31ADDD61D00249282 /* ZKSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				FA416AC41ADDD61D00249282 /* ZKSwizzle.h */,
+				FA416AC51ADDD61D00249282 /* ZKSwizzle.m */,
+			);
+			path = ZKSwizzle;
+			sourceTree = "<group>";
+		};
+		FA416AD31ADDEE7700249282 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FA416AD61ADDEE9900249282 /* CarouselCell.swift */,
+				FA416AD81ADDEEC600249282 /* TextCell.swift */,
+				FA416ADA1ADDEED300249282 /* LinkCell.swift */,
+				FA9AEB961ADD6D4900A9287C /* Carousel.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		FA548F301ADD581F0041CB6E = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +123,23 @@
 		FA548F3B1ADD581F0041CB6E /* Alexander Zielenski */ = {
 			isa = PBXGroup;
 			children = (
+				FA416ACD1ADDDA2000249282 /* BridgingHeader.h */,
+				FA416AD01ADDDC5500249282 /* NSObject+PerformSelector.h */,
+				FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */,
+				FA416AC31ADDD61D00249282 /* ZKSwizzle */,
+				FA416ABC1ADDB56D00249282 /* CarouselContent.plist */,
 				FA548F3E1ADD581F0041CB6E /* AppDelegate.swift */,
 				FA548F401ADD581F0041CB6E /* MasterViewController.swift */,
-				FA548F421ADD58200041CB6E /* DetailViewController.swift */,
+				FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */,
+				FA416ACE1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift */,
+				FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */,
+				FA416AD31ADDEE7700249282 /* views */,
 				FA548F441ADD58200041CB6E /* Main.storyboard */,
 				FA548F471ADD58200041CB6E /* Images.xcassets */,
 				FA548F491ADD58200041CB6E /* LaunchScreen.xib */,
 				FA548F3C1ADD581F0041CB6E /* Supporting Files */,
+				FA416AC71ADDD6A500249282 /* ZeppelinPreview.h */,
+				FA416AC81ADDD6A500249282 /* ZeppelinPreview.m */,
 			);
 			path = "Alexander Zielenski";
 			sourceTree = "<group>";
@@ -195,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA416ABD1ADDB56D00249282 /* CarouselContent.plist in Resources */,
 				FA548F461ADD58200041CB6E /* Main.storyboard in Resources */,
 				FA548F4B1ADD58200041CB6E /* LaunchScreen.xib in Resources */,
 				FA548F481ADD58200041CB6E /* Images.xcassets in Resources */,
@@ -215,9 +270,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA548F431ADD58200041CB6E /* DetailViewController.swift in Sources */,
+				FA416AD91ADDEEC600249282 /* TextCell.swift in Sources */,
 				FA548F411ADD581F0041CB6E /* MasterViewController.swift in Sources */,
 				FA548F3F1ADD581F0041CB6E /* AppDelegate.swift in Sources */,
+				FA9AEB951ADD664900A9287C /* ProjectsTableViewController.swift in Sources */,
+				FA416AD71ADDEE9900249282 /* CarouselCell.swift in Sources */,
+				FA9AEB971ADD6D4900A9287C /* Carousel.swift in Sources */,
+				FA416AD21ADDDC5500249282 /* NSObject+PerformSelector.m in Sources */,
+				FA416ADB1ADDEED300249282 /* LinkCell.swift in Sources */,
+				FA87D04A1ADEFEEF00A74D0D /* ImagePreviewController.swift in Sources */,
+				FA416ACF1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift in Sources */,
+				FA416AC61ADDD61D00249282 /* ZKSwizzle.m in Sources */,
+				FA416AC91ADDD6A500249282 /* ZeppelinPreview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +361,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Alexander Zielenski/BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -332,6 +397,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Alexander Zielenski/BridgingHeader.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -409,6 +475,7 @@
 				FA548F5C1ADD58200041CB6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA548F5D1ADD58200041CB6E /* Build configuration list for PBXNativeTarget "Alexander ZielenskiTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +484,7 @@
 				FA548F5F1ADD58200041CB6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
