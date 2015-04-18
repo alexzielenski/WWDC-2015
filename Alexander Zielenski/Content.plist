@@ -430,6 +430,16 @@
 					<key>class</key>
 					<string>detail</string>
 				</dict>
+				<dict>
+					<key>detail</key>
+					<string>The Dark Side by E-Dubble</string>
+					<key>class</key>
+					<string>link</string>
+					<key>title</key>
+					<string>Current Jam</string>
+					<key>url</key>
+					<string>https://open.spotify.com/track/1OCYw0njNENFpNXtQ8LTuS</string>
+				</dict>
 			</array>
 			<key>image</key>
 			<string>AboutHeader</string>
