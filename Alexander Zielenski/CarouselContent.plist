@@ -56,55 +56,31 @@
 					<array>
 						<dict>
 							<key>image</key>
-							<string>ZeppelinHeader</string>
+							<string>Zeppelin1</string>
 							<key>name</key>
 							<string></string>
 						</dict>
 						<dict>
 							<key>image</key>
-							<string>ZeppelinHeader</string>
+							<string>Zeppelin2</string>
 							<key>name</key>
 							<string></string>
 						</dict>
 						<dict>
 							<key>image</key>
-							<string>ZeppelinHeader</string>
+							<string>Zeppelin3</string>
 							<key>name</key>
 							<string></string>
 						</dict>
 						<dict>
 							<key>image</key>
-							<string>ZeppelinHeader</string>
+							<string>Zeppelin4</string>
 							<key>name</key>
 							<string></string>
 						</dict>
 						<dict>
 							<key>image</key>
-							<string>ZeppelinHeader</string>
-							<key>name</key>
-							<string></string>
-						</dict>
-						<dict>
-							<key>image</key>
-							<string>ZeppelinHeader</string>
-							<key>name</key>
-							<string></string>
-						</dict>
-						<dict>
-							<key>image</key>
-							<string>ZeppelinHeader</string>
-							<key>name</key>
-							<string></string>
-						</dict>
-						<dict>
-							<key>image</key>
-							<string>ZeppelinHeader</string>
-							<key>name</key>
-							<string></string>
-						</dict>
-						<dict>
-							<key>image</key>
-							<string>ZeppelinHeader</string>
+							<string>Zeppelin5</string>
 							<key>name</key>
 							<string></string>
 						</dict>
@@ -268,6 +244,57 @@
 					<string>Description</string>
 					<key>detail</key>
 					<string>TinyBar is another iOS Tweak for jailbroken devices. It allows users to make their notifications have the height of a status bar with a marquee for scorlling text and change fonts and sizes. It was a much requested feature in iOS7 after the introduciton of the new banner style to have a less intrusive alternative and TinyBar fills that need.</string>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>carousel</string>
+					<key>detail</key>
+					<array>
+						<dict>
+							<key>image</key>
+							<string>TinyBar1</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>TinyBar2</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>TinyBar3</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>TinyBar4</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>TinyBar5</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>TinyBar6</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>TinyBar7</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Gallery</string>
 				</dict>
 			</array>
 			<key>image</key>

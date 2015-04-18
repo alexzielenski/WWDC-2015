@@ -68,7 +68,13 @@ class CarouselEntry: UIView {
 
 class Carousel: UIScrollView, UIScrollViewDelegate {
     @IBOutlet var carouselDelegate: CarouselDelegate?
-    var entries: [CarouselEntry] = []
+    var entries: [CarouselEntry] = [] {
+        didSet {
+            for entry in oldValue {
+                entry.removeFromSuperview()
+            }
+        }
+    }
     var ratio:CGFloat = 1.0
     var tapHandler: ((entry: CarouselEntry) -> ())?
 
@@ -129,7 +135,7 @@ class Carousel: UIScrollView, UIScrollViewDelegate {
     
     var totalPages:Int {
         if cellWidth > 0 {
-            return Int(round(contentSize.width / cellWidth * ratio))
+            return Int(ceil(contentSize.width / cellWidth * ratio))
         }
         
         return 0
@@ -138,7 +144,7 @@ class Carousel: UIScrollView, UIScrollViewDelegate {
     var currentPage:Int {
         get {
             if frame.size.width > 0 {
-                return Int(round(contentOffset.x / frame.size.width))
+                return Int(ceil(contentOffset.x / frame.size.width))
             }
             return 0
         }
@@ -152,8 +158,16 @@ class Carousel: UIScrollView, UIScrollViewDelegate {
             dest = max(0, dest)
             dest = min(dest, entries.count - 1)
 
-            let cell = entries[dest]
-            self.setContentOffset(CGPointMake(CGFloat(dest) * frame.size.width, 0), animated: true)
+            let amt = Int(ceil(1 / ratio))
+            let idx = Int(ceil(CGFloat(dest) / ratio))
+            var diff:CGFloat = 0;
+            if (newValue == totalPages - 1) {
+                diff = CGFloat(amt - (entries.count - idx))
+            } else {
+                
+            }
+
+            self.setContentOffset(CGPointMake(CGFloat(dest) * frame.size.width - cellWidth * diff, 0), animated: true)
         }
     }
     

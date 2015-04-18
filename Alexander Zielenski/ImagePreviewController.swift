@@ -35,15 +35,6 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
             // force loading from the storyboard
             let v = view
             imageView.image = newValue
-            if let image = newValue {
-                let minimumScale = scrollView.frame.size.width / image.size.width;
-                scrollView.maximumZoomScale = 6.0
-                scrollView.minimumZoomScale = minimumScale;
-                scrollView.zoomScale = minimumScale;
-                
-                imageView.frame.size = self.image!.size
-                scrollView.addSubview(imageView)
-            }
         }
     }
     
@@ -57,12 +48,43 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
         
         imageView.contentMode = .ScaleToFill;
         imageView.userInteractionEnabled = true;
+        
+        view.preservesSuperviewLayoutMargins = false
+        view.layoutMargins = UIEdgeInsetsZero
+        
+        scrollView.preservesSuperviewLayoutMargins = false
+        scrollView.layoutMargins = UIEdgeInsetsZero
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.alpha = 1.0
+        
+        if let image = self.image {
+            let minimumScale = scrollView.frame.size.width / image.size.width;
+            scrollView.maximumZoomScale = 6.0
+            scrollView.minimumZoomScale = minimumScale;
+            scrollView.zoomScale = minimumScale;
+            
+            imageView.frame.size = image.size
+            imageView.frame.origin = CGPointZero
+            scrollView.addSubview(imageView)
+        }
+        
+        UIView.animateWithDuration(0.5, animations: {
+            [weak self]
+            () -> Void in
+            UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Fade)
+            })
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        if !animated {
+            UIApplication.sharedApplication().statusBarHidden = false
+        } else {
+            UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .Fade)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -73,7 +95,6 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
         UIView.animateWithDuration(0.5, animations: {
             [weak self]
             () -> Void in
-            
             self?.navigationController?.navigationBar.alpha = 0.0
         })
     }
@@ -87,6 +108,8 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
                 () -> Void in
                 
                 self?.navigationController?.navigationBar.alpha = (1 - self!.navigationController!.navigationBar.alpha)
+//                UIApplication.sharedApplication().setStatusBarHidden(!UIApplication.sharedApplication().statusBarHidden, withAnimation: .Fade)
+
                 })
         }
     }

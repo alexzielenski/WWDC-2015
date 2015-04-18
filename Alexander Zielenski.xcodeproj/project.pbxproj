@@ -24,6 +24,7 @@
 		FA87D04A1ADEFEEF00A74D0D /* ImagePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */; };
 		FA9AEB951ADD664900A9287C /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */; };
 		FA9AEB971ADD6D4900A9287C /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB961ADD6D4900A9287C /* Carousel.swift */; };
+		FAEDE1FE1AE283E9006E44C3 /* Screenshots.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewController.swift; sourceTree = "<group>"; };
 		FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
 		FA9AEB961ADD6D4900A9287C /* Carousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Carousel.swift; path = views/Carousel.swift; sourceTree = "<group>"; };
+		FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Screenshots.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				FA416AD31ADDEE7700249282 /* views */,
 				FA548F441ADD58200041CB6E /* Main.storyboard */,
 				FA548F471ADD58200041CB6E /* Images.xcassets */,
+				FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */,
 				FA548F491ADD58200041CB6E /* LaunchScreen.xib */,
 				FA548F3C1ADD581F0041CB6E /* Supporting Files */,
 				FA416AC71ADDD6A500249282 /* ZeppelinPreview.h */,
@@ -249,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEDE1FE1AE283E9006E44C3 /* Screenshots.xcassets in Resources */,
 				FA416ABD1ADDB56D00249282 /* CarouselContent.plist in Resources */,
 				FA548F461ADD58200041CB6E /* Main.storyboard in Resources */,
 				FA548F4B1ADD58200041CB6E /* LaunchScreen.xib in Resources */,
@@ -406,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Alexander Zielenski/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Alexander Zielenski/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

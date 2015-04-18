@@ -60,6 +60,7 @@ class ProjectsTableViewController: UITableViewController {
         let on = pageItem["on"] as? String
         let off = oldPageItem["off"] as? String
         
+        // DRY
         if let on = on {
             let sel = Selector(on)
             if respondsToSelector(sel) && count(on) > 0 {
@@ -106,6 +107,7 @@ class ProjectsTableViewController: UITableViewController {
             
             cell.carousel.entries = entries
             cell.carousel.tapHandler = nil
+            cell.carousel.ratio = 1
             cell.callBack = {
                 [weak self]
                 (cell, page) in

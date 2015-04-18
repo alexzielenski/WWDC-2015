@@ -348,13 +348,13 @@
         <!--Image Preview Controller-->
         <scene sceneID="dnM-xD-xjl">
             <objects>
-                <viewController storyboardIdentifier="ImagePreviewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pVw-PL-O6a" customClass="ImagePreviewController" customModule="Alexander_Zielenski" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagePreviewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pVw-PL-O6a" customClass="ImagePreviewController" customModule="Alexander_Zielenski" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ycC-MW-axl"/>
                         <viewControllerLayoutGuide type="bottom" id="JqD-N8-5Z5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zov-56-nYu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btY-dt-ihn">
@@ -368,7 +368,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="btY-dt-ihn" firstAttribute="leading" secondItem="zov-56-nYu" secondAttribute="leadingMargin" constant="-16" id="Az0-md-X1T"/>
-                            <constraint firstItem="btY-dt-ihn" firstAttribute="top" secondItem="ycC-MW-axl" secondAttribute="bottom" constant="-64" id="Ugc-b3-HnG"/>
+                            <constraint firstItem="btY-dt-ihn" firstAttribute="top" secondItem="ycC-MW-axl" secondAttribute="bottom" constant="-44" id="Ugc-b3-HnG"/>
                             <constraint firstItem="JqD-N8-5Z5" firstAttribute="top" secondItem="btY-dt-ihn" secondAttribute="bottom" id="i6N-qJ-wgp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="btY-dt-ihn" secondAttribute="trailing" constant="-16" id="yyw-LQ-Xqd"/>
                         </constraints>
@@ -380,6 +380,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="scrollView" destination="btY-dt-ihn" id="0uj-74-c6m"/>
                     </connections>
