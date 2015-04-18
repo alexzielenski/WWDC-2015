@@ -40,6 +40,8 @@ class CarouselCell: UITableViewCell, CarouselDelegate {
     }
     
     override func didMoveToWindow() {
+        super.didMoveToWindow()
+        
         leftArrowButton.gestureRecognizers = nil
         rightArrowButton.gestureRecognizers = nil
         
@@ -50,6 +52,11 @@ class CarouselCell: UITableViewCell, CarouselDelegate {
         doubleTap = UITapGestureRecognizer(target: self, action: "doubleTap:")
         doubleTap.numberOfTapsRequired = 2
         rightArrowButton.addGestureRecognizer(doubleTap)
+    }
+    
+    override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        carousel.currentPage = 0
     }
 
     override func layoutSubviews() {
