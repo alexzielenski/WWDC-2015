@@ -63,14 +63,16 @@ class CarouselCell: UITableViewCell, CarouselDelegate {
         super.layoutSubviews()
         
         leftArrowButton.layer.shadowColor = UIColor.blackColor().CGColor
-        leftArrowButton.layer.shadowRadius = 5.0
+        leftArrowButton.layer.shadowRadius = 6.0
         leftArrowButton.layer.shadowOpacity = 0.5
-        leftArrowButton.alpha = 0.5
+        leftArrowButton.layer.shadowOffset = CGSizeZero
+        leftArrowButton.alpha = 0.65
         
         rightArrowButton.layer.shadowColor = UIColor.blackColor().CGColor
-        rightArrowButton.layer.shadowRadius = 5.0
+        rightArrowButton.layer.shadowRadius = 6.0
         rightArrowButton.layer.shadowOpacity = 0.5
-        rightArrowButton.alpha = 0.5
+        rightArrowButton.layer.shadowOffset = CGSizeZero
+        rightArrowButton.alpha = 0.65
         carousel.carouselDelegate = self
         
         // Make sure the buttons are on top of the carousel

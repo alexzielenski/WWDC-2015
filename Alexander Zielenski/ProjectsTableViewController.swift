@@ -147,7 +147,10 @@ class ProjectsTableViewController: UITableViewController {
             (cell as! CarouselCell).carousel.tapHandler = {
                 [weak self]
                 (entry) in
-                self?.performSegueWithIdentifier("imagePreview", sender: entry.image)
+                
+                let images = (cell as! CarouselCell).carousel.images as NSArray
+                let sender = NSDictionary(objectsAndKeys: entry.image!, "current" as NSString, images, "images" as NSString)
+                self?.performSegueWithIdentifier("imagePreview", sender: sender)
                 
             }
         } else if (cls == "text") {
@@ -195,8 +198,11 @@ class ProjectsTableViewController: UITableViewController {
         if let identifier = segue.identifier {
             if identifier == "imagePreview" {
                 let imagePreview:ImagePreviewController! = (segue.destinationViewController as! UINavigationController).topViewController as! ImagePreviewController
+                let z3 = UIImage(named: "Zeppelin3")
+                let d = sender as? NSDictionary
                 
-                imagePreview.image = sender as? UIImage
+                imagePreview.images = d?["images"]! as? [UIImage] ?? []
+                imagePreview.currentImage = d?["current"] as? UIImage
             }
         }
     }

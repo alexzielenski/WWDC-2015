@@ -9,9 +9,11 @@
 import UIKit
 
 class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureRecognizerDelegate {
-    var imageView = UIImageView(image: UIImage(named: "ZeppelinHeader"))
     private var tapGestureRecognizer: UITapGestureRecognizer!
     private var doubleTapGestureRecognizer: UITapGestureRecognizer!
+    private var imageViews: [UIImageView] = []
+    private var scrollViews: [UIScrollView] = []
+    var images: [UIImage] = []
     @IBOutlet var scrollView: UIScrollView!
     
     required init(coder aDecoder: NSCoder) {
@@ -27,56 +29,68 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
         doubleTapGestureRecognizer.delegate = self
     }
     
-    var image: UIImage? {
-        get {
-            return imageView.image
-        }
-        set {
-            // force loading from the storyboard
-            let v = view
-            imageView.image = newValue
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.minimumZoomScale = 0.5
-        scrollView.delegate = self
-        scrollView.userInteractionEnabled = true
-        scrollView.exclusiveTouch = true
-        
-        imageView.contentMode = .ScaleToFill;
-        imageView.userInteractionEnabled = true;
-        
-        view.preservesSuperviewLayoutMargins = false
-        view.layoutMargins = UIEdgeInsetsZero
-        
-        scrollView.preservesSuperviewLayoutMargins = false
-        scrollView.layoutMargins = UIEdgeInsetsZero
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.pagingEnabled = true
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
         navigationController?.navigationBar.alpha = 1.0
-        
-        if let image = self.image {
-            let minimumScale = scrollView.frame.size.width / image.size.width;
-            scrollView.maximumZoomScale = 6.0
-            scrollView.minimumZoomScale = minimumScale;
-            scrollView.zoomScale = minimumScale;
-            
-            imageView.frame.size = image.size
-            imageView.frame.origin = CGPointZero
-            scrollView.addSubview(imageView)
-        }
-        
+    
         UIView.animateWithDuration(0.5, animations: {
             [weak self]
             () -> Void in
             UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Fade)
             })
+    }
+    
+    var currentImage: UIImage?
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        for v in scrollViews {
+            v.removeFromSuperview()
+        }
+        scrollViews = []
+        
+        scrollView.contentOffset = CGPointZero
+        scrollView.contentSize = CGSizeMake(CGFloat(images.count) * scrollView.frame.size.width, scrollView.frame.size.height)
+        for i in 0..<images.count {
+            let sv = UIScrollView(frame: CGRect(x: CGFloat(i) * (scrollView.frame.size.width),
+                y: 0,
+                width: scrollView.frame.size.width,
+                height: scrollView.frame.size.height))
+            
+            let image = images[i]
+            let iv = UIImageView(image: image)
+            iv.frame.size = image.size ?? CGSizeZero
+            iv.contentMode = .ScaleToFill
+            
+            let minimumScale = sv.frame.size.width / iv.frame.size.width
+            sv.maximumZoomScale = 6.0
+            sv.minimumZoomScale = minimumScale
+            sv.zoomScale = minimumScale
+            
+            sv.delegate = self
+            sv.tag = i
+            sv.contentSize = iv.frame.size
+            sv.addSubview(iv)
+            
+            scrollView.addSubview(sv)
+            scrollViews.append(sv)
+            imageViews.append(iv)
+        }
+        
+        if let currentImage = currentImage {
+            if let idx = find(images, currentImage) {
+                scrollView.contentOffset.x = CGFloat(idx) * scrollView.frame.size.width
+            }
+        }
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -108,29 +122,41 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
                 () -> Void in
                 
                 self?.navigationController?.navigationBar.alpha = (1 - self!.navigationController!.navigationBar.alpha)
-//                UIApplication.sharedApplication().setStatusBarHidden(!UIApplication.sharedApplication().statusBarHidden, withAnimation: .Fade)
-
                 })
         }
     }
     
     dynamic func doubleTap(gesture: UITapGestureRecognizer?) {
-        if scrollView.zoomScale >= scrollView.maximumZoomScale {
-            scrollView.zoomScale = scrollView.minimumZoomScale
+        println("dubtap")
+        let idx = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
+        let iv = imageViews[idx]
+        let sv = scrollViews[idx]
+        var pt = gesture!.locationInView(scrollView)
+        
+        if !(scrollView.hitTest(pt, withEvent: nil) is UIScrollView) {
+            return
+        }
+        
+        if sv.zoomScale >= sv.maximumZoomScale {
+            sv.zoomScale = sv.minimumZoomScale
         } else {
+            // MARK: FIX THIS
+            pt = gesture!.locationInView(sv)
             let step:CGFloat = 1.5
-            let newScale = scrollView.zoomScale * step
-            let pt = gesture!.locationInView(scrollView)
-            let h = scrollView.frame.size.height / step
-            let w = scrollView.frame.size.width / step
+            let newScale = sv.zoomScale * step
+            let h = sv.frame.size.height / step
+            let w = sv.frame.size.width / step
             let rect = CGRect(x: pt.x - w / 2, y: pt.y - h / 2, width: w, height: h)
-            scrollView.zoomToRect(rect, animated: true)
+            sv.zoomToRect(rect, animated: true)
         }
         
     }
 
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
-        return imageView
+        if (scrollView != self.scrollView) {
+            return imageViews[scrollView.tag]
+        }
+        return nil
     }
     
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
