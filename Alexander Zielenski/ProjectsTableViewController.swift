@@ -182,6 +182,8 @@ class ProjectsTableViewController: UITableViewController {
                 }
             }
         }
+        
+        cell?.selected = false
     }
     
     // MARK: - Navigation
