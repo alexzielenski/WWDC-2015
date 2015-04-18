@@ -77,7 +77,13 @@ class Carousel: UIScrollView, UIScrollViewDelegate {
     }
     var ratio:CGFloat = 1.0
     var tapHandler: ((entry: CarouselEntry) -> ())?
-
+    
+    var images:[UIImage] {
+        get {
+            return (entries as NSArray).valueForKey("image") as! [UIImage]
+        }
+    }
+    
     var cellWidth: CGFloat {
         return frame.size.width * ratio
     }
