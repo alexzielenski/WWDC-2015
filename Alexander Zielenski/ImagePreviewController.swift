@@ -153,7 +153,7 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
             sv.setZoomScale(sv.minimumZoomScale, animated: true)
         } else {
             // MARK: FIX THIS
-            pt = gesture!.locationInView(sv)
+            pt = gesture!.locationInView(iv)
             let step:CGFloat = 2.0
             let newScale = sv.zoomScale * step
             let h = sv.frame.size.height / step
