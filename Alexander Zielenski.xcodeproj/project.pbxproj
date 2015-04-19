@@ -129,8 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				FA416ACD1ADDDA2000249282 /* BridgingHeader.h */,
-				FA416AD01ADDDC5500249282 /* NSObject+PerformSelector.h */,
-				FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */,
+				FAEDE2011AE3FECD006E44C3 /* Categories */,
 				FA416AC31ADDD61D00249282 /* ZKSwizzle */,
 				FA416ABC1ADDB56D00249282 /* Content.plist */,
 				FA548F3E1ADD581F0041CB6E /* AppDelegate.swift */,
@@ -173,6 +172,15 @@
 				FA548F551ADD58200041CB6E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAEDE2011AE3FECD006E44C3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FA416AD01ADDDC5500249282 /* NSObject+PerformSelector.h */,
+				FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

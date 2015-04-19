@@ -46,6 +46,20 @@ class MasterViewController: UITableViewController {
         UIApplication.sharedApplication().openURL(NSURL(string: "http://github.com/alexzielenski")!)
     }
     
+    @IBAction func pressHat(sender: UIButton?) {
+        if let button = sender {
+            let layer = button.layer
+            let current = layer.valueForKey("transform.rotation") as? NSNumber ?? NSNumber(float: 0.0)
+            let rotation = CATransform3DRotate(layer.transform, CGFloat(2.0 * M_PI), 0, 0, 1.0)
+            layer.transform = rotation
+            let animation = CABasicAnimation(keyPath: "transform.rotation")
+            animation.fromValue = current
+            animation.duration = 0.5
+            animation.toValue = NSNumber(float: current.floatValue + Float(2 * M_PI))
+            layer.addAnimation(animation, forKey: "transform.rotation")
+        }
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "projects" || segue.identifier == "about" {
             (segue.destinationViewController as! UIViewController).title = segue.identifier?.capitalizedString

@@ -27,6 +27,7 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
         
         tapGestureRecognizer.delegate = self
         doubleTapGestureRecognizer.delegate = self
+        tapGestureRecognizer.requireGestureRecognizerToFail(doubleTapGestureRecognizer)
     }
     
     override func viewDidLoad() {

@@ -143,6 +143,51 @@
 					<key>title</key>
 					<string>How it works</string>
 				</dict>
+				<dict>
+					<key>class</key>
+					<string>carousel</string>
+					<key>detail</key>
+					<array>
+						<dict>
+							<key>image</key>
+							<string>Mousecape1</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>Mousecape2</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>Mousecape3</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>Mousecape4</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>Mousecape5</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>Mousecape6</string>
+							<key>name</key>
+							<string></string>
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Gallery</string>
+				</dict>
 			</array>
 			<key>image</key>
 			<string>MousecapeHeader</string>
@@ -416,6 +461,30 @@
 					<string>text</string>
 					<key>title</key>
 					<string>Interests</string>
+				</dict>
+				<dict>
+					<key>detail</key>
+					<string>I have gained experience developing in C/Objective-C for 6 years and HTML/CSS/Javascript for 7 years along with several web frameworks and database technologies.</string>
+					<key>class</key>
+					<string>text</string>
+					<key>title</key>
+					<string>Skills</string>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>text</string>
+					<key>detail</key>
+					<string>My main goal at WWDC 2015 is to attend talks about the inner-workings of OS X and iOS and find out more about how these complex systems work together so I could one day help to build them.</string>
+					<key>title</key>
+					<string>Goal</string>
+				</dict>
+				<dict>
+					<key>detail</key>
+					<string>I am currently employed as a teaching assistant for CS 2110 (Object-Oriented Programming and Data Structures) at my school but I am also a member of the engineering projct team, CUAppDev, a club whose purpose is to publish an app on the App Store. We are just getting started so we&apos;ve yet to build a portfolio but I am excited for the future.</string>
+					<key>class</key>
+					<string>text</string>
+					<key>title</key>
+					<string>Work</string>
 				</dict>
 			</array>
 			<key>image</key>

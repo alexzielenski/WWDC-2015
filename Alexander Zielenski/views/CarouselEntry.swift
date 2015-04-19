@@ -40,7 +40,7 @@ class CarouselEntry: UIView {
         titleLabel.text = title
         titleLabel.textAlignment = .Center
         imageView.image = image
-        imageView.contentMode = UIViewContentMode.ScaleToFill
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
         
         var intrinsicSize = titleLabel.intrinsicContentSize()
         
