@@ -410,8 +410,9 @@
         <!--Navigation Controller-->
         <scene sceneID="TuC-SX-fkM">
             <objects>
-                <navigationController id="Rwv-dd-b7M" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="26Y-hc-KRO">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="Rwv-dd-b7M" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" barStyle="black" id="26Y-hc-KRO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -432,11 +433,11 @@
                         <viewControllerLayoutGuide type="bottom" id="JqD-N8-5Z5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zov-56-nYu">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="44" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btY-dt-ihn">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="btY-dt-ihn">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="pVw-PL-O6a" id="CBT-Br-EVn"/>
@@ -445,16 +446,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="btY-dt-ihn" firstAttribute="leading" secondItem="zov-56-nYu" secondAttribute="leadingMargin" constant="-16" id="Az0-md-X1T"/>
-                            <constraint firstItem="btY-dt-ihn" firstAttribute="top" secondItem="ycC-MW-axl" secondAttribute="bottom" constant="-44" id="Ugc-b3-HnG"/>
-                            <constraint firstItem="JqD-N8-5Z5" firstAttribute="top" secondItem="btY-dt-ihn" secondAttribute="bottom" id="i6N-qJ-wgp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="btY-dt-ihn" secondAttribute="trailing" constant="-16" id="yyw-LQ-Xqd"/>
+                            <constraint firstItem="JqD-N8-5Z5" firstAttribute="top" secondItem="btY-dt-ihn" secondAttribute="bottom" id="4bs-yD-vl9"/>
+                            <constraint firstItem="btY-dt-ihn" firstAttribute="leading" secondItem="zov-56-nYu" secondAttribute="leading" id="Az0-md-X1T"/>
+                            <constraint firstItem="btY-dt-ihn" firstAttribute="top" secondItem="ycC-MW-axl" secondAttribute="top" id="aJ3-Zi-SId"/>
+                            <constraint firstAttribute="trailing" secondItem="btY-dt-ihn" secondAttribute="trailing" id="yyw-LQ-Xqd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="U1J-jo-IUQ">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="7IY-Oz-sif">
+                    <navigationItem key="navigationItem" id="Nf9-Mk-tbY">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="6Jk-Iy-DnG">
                             <connections>
-                                <segue destination="WQ7-Zl-KDP" kind="unwind" unwindAction="unwindToProjectsTable:" id="qj4-BG-Qjg"/>
+                                <segue destination="WQ7-Zl-KDP" kind="unwind" unwindAction="unwindToProjectsTable:" id="bJN-CB-QXS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
