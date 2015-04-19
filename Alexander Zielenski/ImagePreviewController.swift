@@ -62,29 +62,36 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
         scrollView.contentOffset = CGPointZero
         scrollView.contentSize = CGSizeMake(CGFloat(images.count) * scrollView.frame.size.width, scrollView.frame.size.height)
         for i in 0..<images.count {
-            let sv = UIScrollView(frame: CGRect(x: CGFloat(i) * (scrollView.frame.size.width),
-                y: 0,
-                width: scrollView.frame.size.width,
-                height: scrollView.frame.size.height))
-            
             let image = images[i]
             let iv = UIImageView(image: image)
             iv.frame.size = image.size ?? CGSizeZero
             iv.contentMode = .ScaleToFill
+            var minimumScale:CGFloat = 1.0
+            if iv.frame.size.width > scrollView.frame.size.width {
+                minimumScale = scrollView.frame.size.width / iv.frame.size.width
+            }
             
-            let minimumScale = sv.frame.size.width / iv.frame.size.width
-            sv.maximumZoomScale = 6.0
+            iv.frame.origin = CGPointMake(scrollView.frame.size.width / 2 - iv.frame.size.width * minimumScale / 2, scrollView.frame.size.height / 2 - iv.frame.size.height * minimumScale / 2)
+            
+            let sv = UIScrollView(frame: CGRect(
+                x: CGFloat(i) * (scrollView.frame.size.width),
+                y: 0,
+                width: scrollView.frame.size.width,
+                height: scrollView.frame.size.height))
+            
+            sv.maximumZoomScale = 5.0
             sv.minimumZoomScale = minimumScale
-            sv.zoomScale = minimumScale
             
             sv.delegate = self
             sv.tag = i
-            sv.contentSize = iv.frame.size
+            sv.contentSize = CGSizeMake(iv.frame.size.width, iv.frame.size.height)
             sv.addSubview(iv)
             
             scrollView.addSubview(sv)
             scrollViews.append(sv)
             imageViews.append(iv)
+            
+            sv.zoomScale = minimumScale
         }
         
         if let currentImage = currentImage {
@@ -138,12 +145,12 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
             return
         }
         
-        if sv.zoomScale >= sv.maximumZoomScale {
-            sv.zoomScale = sv.minimumZoomScale
+        if sv.zoomScale > sv.minimumZoomScale {
+            sv.setZoomScale(sv.minimumZoomScale, animated: true)
         } else {
             // MARK: FIX THIS
             pt = gesture!.locationInView(sv)
-            let step:CGFloat = 1.5
+            let step:CGFloat = 2.0
             let newScale = sv.zoomScale * step
             let h = sv.frame.size.height / step
             let w = sv.frame.size.width / step
