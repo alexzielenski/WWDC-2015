@@ -94,6 +94,7 @@ class Carousel: UIScrollView, UIScrollViewDelegate {
         return 0
     }
     
+    var animationsEnabled = true
     var currentPage:Int {
         get {
             if frame.size.width > 0 {
@@ -120,7 +121,7 @@ class Carousel: UIScrollView, UIScrollViewDelegate {
                 
             }
 
-            self.setContentOffset(CGPointMake(CGFloat(dest) * frame.size.width - cellWidth * diff, 0), animated: true)
+            self.setContentOffset(CGPointMake(CGFloat(dest) * frame.size.width - cellWidth * diff, 0), animated: animationsEnabled)
         }
     }
     
