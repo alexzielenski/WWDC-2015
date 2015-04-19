@@ -19,6 +19,7 @@ class CarouselEntry: UIView {
         super.init(frame: CGRectZero)
         self.title = title
         self.image = image
+        self.contentMode = UIViewContentMode.ScaleAspectFit
         addSubview(titleLabel)
         addSubview(imageView)
     }
@@ -40,7 +41,7 @@ class CarouselEntry: UIView {
         titleLabel.text = title
         titleLabel.textAlignment = .Center
         imageView.image = image
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        imageView.contentMode = self.contentMode
         
         var intrinsicSize = titleLabel.intrinsicContentSize()
         
