@@ -105,7 +105,9 @@ class ProjectsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("carousel", forIndexPath: indexPath) as! CarouselCell
             var entries:[CarouselEntry] = []
             for item in items {
-                entries.append(CarouselEntry(title: item["title"] as? String, image: UIImage(named: item["image"]! as! String)))
+                let entry = CarouselEntry(title: item["title"] as? String, image: UIImage(named: item["image"]! as! String))
+                entry.contentMode = .ScaleToFill
+                entries.append(entry)
             }
             
             cell.carousel.entries = entries
@@ -120,8 +122,13 @@ class ProjectsTableViewController: UITableViewController {
             
             cell.setNeedsLayout()
             cell.layoutIfNeeded()
+            if oldPage > 0 {
+                let orig = cell.carousel.animationsEnabled
+                cell.carousel.animationsEnabled = false
+                cell.carousel.currentPage = oldPage
+                cell.carousel.animationsEnabled = orig
+            }
             return cell
-
         }
         
         let currentItem = currentCells[indexPath.row - 1]
