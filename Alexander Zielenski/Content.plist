@@ -396,6 +396,25 @@
 					<key>title</key>
 					<string>How it works</string>
 				</dict>
+				<dict>
+					<key>class</key>
+					<string>carousel</string>
+					<key>detail</key>
+					<array>
+						<dict>
+							<key>image</key>
+							<string>ThemeEngine1</string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>ThemeEngine2</string>
+						</dict>
+						<dict>
+							<key>image</key>
+							<string>ThemeEngine3</string>
+						</dict>
+					</array>
+				</dict>
 			</array>
 			<key>image</key>
 			<string>ThemeEngineHeader</string>
