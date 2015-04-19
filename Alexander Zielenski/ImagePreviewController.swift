@@ -71,8 +71,8 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
                 minimumScale = scrollView.frame.size.width / iv.frame.size.width
             }
             
-            iv.frame.origin = CGPointMake(scrollView.frame.size.width / 2 - iv.frame.size.width * minimumScale / 2, scrollView.frame.size.height / 2 - iv.frame.size.height * minimumScale / 2)
-            
+//            iv.frame.origin = CGPointMake(scrollView.frame.size.width / 2 - iv.frame.size.width * minimumScale / 2, scrollView.frame.size.height / 2 - iv.frame.size.height * minimumScale / 2)
+//
             let sv = UIScrollView(frame: CGRect(
                 x: CGFloat(i) * (scrollView.frame.size.width),
                 y: 0,
@@ -84,14 +84,18 @@ class ImagePreviewController: UIViewController, UIScrollViewDelegate, UIGestureR
             
             sv.delegate = self
             sv.tag = i
-            sv.contentSize = CGSizeMake(iv.frame.size.width, iv.frame.size.height)
             sv.addSubview(iv)
-            
             scrollView.addSubview(sv)
             scrollViews.append(sv)
             imageViews.append(iv)
             
             sv.zoomScale = minimumScale
+            let top = scrollView.frame.size.height / 2 - iv.frame.size.height / 2
+            let left = scrollView.frame.size.width / 2 - iv.frame.size.width / 2
+            sv.contentInset = UIEdgeInsets(top: top,
+                left: left,
+                bottom: top,
+                right: left)
         }
         
         if let currentImage = currentImage {
