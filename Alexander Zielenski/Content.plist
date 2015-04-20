@@ -131,7 +131,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>Mousecape is one of my projects of which I am most proud. I created it to allow users to customize their mouse cursors into custom images. The application itself includes a viewable library which allows users to create and apply their own &quot;capes&quot; or share cape files to their friends or the world to use.</string>
+					<string>Mousecape is one of my projects of which I am most proud. I created it to allow users to customize their mouse cursors into custom images. The application itself includes a viewable library which allows users to create and apply their own &quot;capes&quot; or share caps with their friends or the world to use.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -139,7 +139,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>Under the hood, Mousecape uses a command line tool I wrote called &quot;mousecloak&quot; which manipulates private CoreGraphics APIs whcih I had reverse engineered into showing custom images for default cursors without needing to inject a library anywhere.</string>
+					<string>Under the hood, Mousecape uses a command line tool I wrote called &quot;mousecloak&quot; which manipulates private CoreGraphics APIs which I had reverse engineered to show custom images for default cursors without needing to inject a library anywhere.</string>
 					<key>title</key>
 					<string>How it works</string>
 				</dict>
@@ -231,7 +231,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>optool is something I made to allow developers to link libraries to their executables post-build. It also enables removal of linkages, removal of aslr, removal of code signatures, and removal of __RESTRICT segments on binaries.  I created optool for myself so I could insert a dylib into Foundation and in turn have most processes on my system compromised with a library to get an ad-hoc CydiaSubstrate-like injection platform for myself.</string>
+					<string>optool is something I made to allow developers to link libraries to their executables post-build. It also enables removal of linkages, removal of aslr, removal of code signatures, and removal of __RESTRICT segments on binaries.  I created optool for myself so I could insert a dylib into Foundation and in turn have most processes on my system &quot;injected&quot; with a library to get an ad-hoc CydiaSubstrate-like injection platform for myself so that I could build tweaks for OS X.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -288,7 +288,7 @@
 					<key>title</key>
 					<string>Description</string>
 					<key>detail</key>
-					<string>TinyBar is another iOS Tweak for jailbroken devices. It allows users to make their notifications have the height of a status bar with a marquee for scorlling text and change fonts and sizes. It was a much requested feature in iOS7 after the introduciton of the new banner style to have a less intrusive alternative and TinyBar fills that need.</string>
+					<string>TinyBar is another iOS Tweak for jailbroken devices. It allows users to make their notifications have the height of a status bar with a marquee for scrolling text and change fonts and sizes. It came about after iOS 7 introduced a new style of notification banner which I felt was too intrusive, so I changed it, open-sourced my code, and released TinyBar for free.</string>
 				</dict>
 				<dict>
 					<key>class</key>
@@ -384,7 +384,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>ThemeEngine is an application for OS X which shows an easy-to-use interface for editing Apple&apos;s proprietary .car file format. Car files are used as the primary mechanism for which user interface assets are stored such as colors, styles, window gradients, button images, etc.  ThemeEngine&apos;s main purpose is to allow users to create themes for OS X and iOS by customizing the car files directly and replacing the default system ones. It features export to/import from Photoshop support, an interactive gradient editor, style effect layer editing, and more.</string>
+					<string>ThemeEngine is an application for OS X which shows an easy-to-use interface for editing Apple&apos;s proprietary .car file format. Car files are used as the primary mechanism for which user interface assets are stored such as colors, styles, window gradients, button images, etc. on OS X and iOS.  ThemeEngine&apos;s main purpose is to allow users to create themes for OS X and iOS by customizing the car files directly and replacing the default system ones. It features export to/import from Photoshop support, an interactive gradient editor, style effect layer editing, and more.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -499,7 +499,7 @@
 				</dict>
 				<dict>
 					<key>detail</key>
-					<string>I am currently employed as a teaching assistant for CS 2110 (Object-Oriented Programming and Data Structures) at my school but I am also a member of the engineering projct team, CUAppDev, a club whose purpose is to publish an app on the App Store. We are just getting started so we&apos;ve yet to build a portfolio but I am excited for the future.</string>
+					<string>I am currently employed as a teaching assistant for CS 2110 (Object-Oriented Programming and Data Structures) at my school but I am also a member of the engineering projct team, CUAppDev, a club whose purpose is to publish an app on the App Store every semester. We are just getting started so we&apos;ve yet to build a portfolio but I am excited for the future.</string>
 					<key>class</key>
 					<string>text</string>
 					<key>title</key>
