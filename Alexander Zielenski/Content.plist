@@ -45,7 +45,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>Zeppelin is a tweak for jailbroken iOS devices to theme carrier logos. It is available in the ModMyI Repository on Cydia and is free and Open Source.   I first started making Zeppelin in January 2012 and released it January 31st, 2012. It has since become a staple of jailbreaking and can be found on installed most user&apos;s iPhones or iPads with thousands of Addons of Carrier Logo packs avaialble in Cydia.</string>
+					<string>Zeppelin is a tweak for jailbroken iOS devices to theme carrier logos. It is available in the ModMyI Repository on Cydia and it is free and open source.   I first started making Zeppelin in January 2012 and released it January 31st, 2012. It has since become a staple of jailbreaking and can be found installed on most user&apos;s iPhones or iPads with thousands of Carrier Logo packs avaialble in Cydia.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -131,7 +131,7 @@
 					<key>class</key>
 					<string>text</string>
 					<key>detail</key>
-					<string>Mousecape is one of my projects of which I am most proud. I created it to allow users to customize their mouse cursors into custom images. The application itself includes a viewable library which allows users to create and apply their own &quot;capes&quot; or share caps with their friends or the world to use.</string>
+					<string>Mousecape is one of my projects of which I am most proud. I created it to allow users to customize their mouse cursors into custom images. The application itself includes a library with which allows users to preview, create and apply their own &quot;capes&quot; or share caps for their friends or the world to use.</string>
 					<key>title</key>
 					<string>Description</string>
 				</dict>
@@ -288,7 +288,7 @@
 					<key>title</key>
 					<string>Description</string>
 					<key>detail</key>
-					<string>TinyBar is another iOS Tweak for jailbroken devices. It allows users to make their notifications have the height of a status bar with a marquee for scrolling text and change fonts and sizes. It came about after iOS 7 introduced a new style of notification banner which I felt was too intrusive, so I changed it, open-sourced my code, and released TinyBar for free.</string>
+					<string>TinyBar is another iOS Tweak for jailbroken devices. It allows users to give their notifications the height of a status bar. TinyBar features a marquee for scrolling text and settings for fonts and sizes. It came about after iOS 7 introduced a new style of notification banner which I felt was too intrusive, so I changed it, open-sourced my code, and released TinyBar for free.</string>
 				</dict>
 				<dict>
 					<key>class</key>
@@ -543,7 +543,7 @@
 					<key>title</key>
 					<string>Description</string>
 					<key>detail</key>
-					<string>As a consultant for CS 2110, I have the responsibility of holding office hours where I make myself available to students of CS 2110, Object Oriented Programming and Data Structures, to assist with any questions they might have or problems with homework. I am also responsible for grading homework, and proctoring and grading exams.  Being a teaching assistant, or consultant, is a very fulfilling job, especially at a place like my school, because I am able to learn by teaching, as in, I gain a better understanding of concepts by explaining them to other people many times over. It is also incredibly fulfilling to help a student get past a tough problem on his or her homework after hours of trying. I fully intend to become a teaching assistant in the years to come.</string>
+					<string>As a consultant for CS 2110, I have the responsibility of holding office hours during which I make myself available to students of CS 2110, Object Oriented Programming and Data Structures, to assist with any questions they might have or problems with homework. I am also responsible for grading homework, and proctoring and grading exams.  Being a teaching assistant, or consultant, is a very fulfilling job, especially at a place like my school, because I am able to learn by teaching, as in, I gain a better understanding of concepts by explaining them to other people many times over. It is also incredibly fulfilling to help a student get past a tough problem on his or her homework after hours of trying. I fully intend to continue being a teaching assistant in the years to come.</string>
 					<key>class</key>
 					<string>text</string>
 				</dict>
@@ -621,7 +621,7 @@
 					<key>title</key>
 					<string>Description</string>
 					<key>detail</key>
-					<string>At ABS, I developed a billable hours timesheet entry for the employees of Applied Business Systems using EmberJS in Javascript which was backed by an Oracle database.  I also consulted on ways to architect web services and create mobile applications using web frameworks such as NodeJS and CocoaTouch.</string>
+					<string>At ABS, I developed a billable hours timesheet entry for the employees of Applied Business Systems using EmberJS in Javascript backed by an Oracle database.  I also consulted on ways to architect web services and create mobile applications using web frameworks such as NodeJS and CocoaTouch, respectively.</string>
 					<key>class</key>
 					<string>text</string>
 				</dict>
