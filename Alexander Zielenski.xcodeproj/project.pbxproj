@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FA416ABD1ADDB56D00249282 /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA416ABC1ADDB56D00249282 /* Content.plist */; };
-		FA416AC61ADDD61D00249282 /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AC51ADDD61D00249282 /* ZKSwizzle.m */; };
-		FA416AC91ADDD6A500249282 /* ZeppelinPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AC81ADDD6A500249282 /* ZeppelinPreview.m */; };
-		FA416ACF1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416ACE1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift */; };
-		FA416AD21ADDDC5500249282 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */; };
 		FA416AD71ADDEE9900249282 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416AD61ADDEE9900249282 /* CarouselCell.swift */; };
 		FA416AD91ADDEEC600249282 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416AD81ADDEEC600249282 /* TextCell.swift */; };
 		FA416ADB1ADDEED300249282 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416ADA1ADDEED300249282 /* LinkCell.swift */; };
@@ -24,6 +20,9 @@
 		FA87D04A1ADEFEEF00A74D0D /* ImagePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */; };
 		FA9AEB951ADD664900A9287C /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */; };
 		FA9AEB971ADD6D4900A9287C /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AEB961ADD6D4900A9287C /* Carousel.swift */; };
+		FAC85B511AE893B500B256BE /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC85B501AE893B500B256BE /* SafariActivity.swift */; };
+		FAC85B541AE893CA00B256BE /* CopyURLActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC85B531AE893CA00B256BE /* CopyURLActivity.swift */; };
+		FAC85B561AE8975000B256BE /* Acknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAC85B551AE8975000B256BE /* Acknowledgements.rtf */; };
 		FAEDE1FE1AE283E9006E44C3 /* Screenshots.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */; };
 		FAEDE2001AE2F86F006E44C3 /* CarouselEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDE1FF1AE2F86F006E44C3 /* CarouselEntry.swift */; };
 /* End PBXBuildFile section */
@@ -40,14 +39,6 @@
 
 /* Begin PBXFileReference section */
 		FA416ABC1ADDB56D00249282 /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
-		FA416AC41ADDD61D00249282 /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSwizzle.h; sourceTree = "<group>"; };
-		FA416AC51ADDD61D00249282 /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSwizzle.m; sourceTree = "<group>"; };
-		FA416AC71ADDD6A500249282 /* ZeppelinPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZeppelinPreview.h; path = demo/ZeppelinPreview.h; sourceTree = "<group>"; };
-		FA416AC81ADDD6A500249282 /* ZeppelinPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZeppelinPreview.m; path = demo/ZeppelinPreview.m; sourceTree = "<group>"; };
-		FA416ACD1ADDDA2000249282 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		FA416ACE1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProjectsTableViewController+Triggers.swift"; sourceTree = "<group>"; };
-		FA416AD01ADDDC5500249282 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PerformSelector.h"; path = "categories/NSObject+PerformSelector.h"; sourceTree = "<group>"; };
-		FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PerformSelector.m"; path = "categories/NSObject+PerformSelector.m"; sourceTree = "<group>"; };
 		FA416AD61ADDEE9900249282 /* CarouselCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarouselCell.swift; path = views/CarouselCell.swift; sourceTree = "<group>"; };
 		FA416AD81ADDEEC600249282 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextCell.swift; path = views/TextCell.swift; sourceTree = "<group>"; };
 		FA416ADA1ADDEED300249282 /* LinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkCell.swift; path = views/LinkCell.swift; sourceTree = "<group>"; };
@@ -64,6 +55,9 @@
 		FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewController.swift; sourceTree = "<group>"; };
 		FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
 		FA9AEB961ADD6D4900A9287C /* Carousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Carousel.swift; path = views/Carousel.swift; sourceTree = "<group>"; };
+		FAC85B501AE893B500B256BE /* SafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariActivity.swift; path = activities/SafariActivity.swift; sourceTree = "<group>"; };
+		FAC85B531AE893CA00B256BE /* CopyURLActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CopyURLActivity.swift; path = activities/CopyURLActivity.swift; sourceTree = "<group>"; };
+		FAC85B551AE8975000B256BE /* Acknowledgements.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Acknowledgements.rtf; sourceTree = "<group>"; };
 		FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Screenshots.xcassets; sourceTree = "<group>"; };
 		FAEDE1FF1AE2F86F006E44C3 /* CarouselEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarouselEntry.swift; path = views/CarouselEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,15 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA416AC31ADDD61D00249282 /* ZKSwizzle */ = {
-			isa = PBXGroup;
-			children = (
-				FA416AC41ADDD61D00249282 /* ZKSwizzle.h */,
-				FA416AC51ADDD61D00249282 /* ZKSwizzle.m */,
-			);
-			path = ZKSwizzle;
-			sourceTree = "<group>";
-		};
 		FA416AD31ADDEE7700249282 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,23 +113,19 @@
 		FA548F3B1ADD581F0041CB6E /* Alexander Zielenski */ = {
 			isa = PBXGroup;
 			children = (
-				FA416ACD1ADDDA2000249282 /* BridgingHeader.h */,
-				FAEDE2011AE3FECD006E44C3 /* Categories */,
-				FA416AC31ADDD61D00249282 /* ZKSwizzle */,
+				FAC85B551AE8975000B256BE /* Acknowledgements.rtf */,
 				FA416ABC1ADDB56D00249282 /* Content.plist */,
 				FA548F3E1ADD581F0041CB6E /* AppDelegate.swift */,
 				FA548F401ADD581F0041CB6E /* MasterViewController.swift */,
 				FA9AEB941ADD664900A9287C /* ProjectsTableViewController.swift */,
-				FA416ACE1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift */,
 				FA87D0491ADEFEEF00A74D0D /* ImagePreviewController.swift */,
+				FAC85B521AE893B900B256BE /* activities */,
 				FA416AD31ADDEE7700249282 /* views */,
 				FA548F441ADD58200041CB6E /* Main.storyboard */,
 				FA548F471ADD58200041CB6E /* Images.xcassets */,
 				FAEDE1FD1AE283E9006E44C3 /* Screenshots.xcassets */,
 				FA548F491ADD58200041CB6E /* LaunchScreen.xib */,
 				FA548F3C1ADD581F0041CB6E /* Supporting Files */,
-				FA416AC71ADDD6A500249282 /* ZeppelinPreview.h */,
-				FA416AC81ADDD6A500249282 /* ZeppelinPreview.m */,
 			);
 			path = "Alexander Zielenski";
 			sourceTree = "<group>";
@@ -174,13 +155,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FAEDE2011AE3FECD006E44C3 /* Categories */ = {
+		FAC85B521AE893B900B256BE /* activities */ = {
 			isa = PBXGroup;
 			children = (
-				FA416AD01ADDDC5500249282 /* NSObject+PerformSelector.h */,
-				FA416AD11ADDDC5500249282 /* NSObject+PerformSelector.m */,
+				FAC85B501AE893B500B256BE /* SafariActivity.swift */,
+				FAC85B531AE893CA00B256BE /* CopyURLActivity.swift */,
 			);
-			name = Categories;
+			name = activities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +248,7 @@
 				FAEDE1FE1AE283E9006E44C3 /* Screenshots.xcassets in Resources */,
 				FA416ABD1ADDB56D00249282 /* Content.plist in Resources */,
 				FA548F461ADD58200041CB6E /* Main.storyboard in Resources */,
+				FAC85B561AE8975000B256BE /* Acknowledgements.rtf in Resources */,
 				FA548F4B1ADD58200041CB6E /* LaunchScreen.xib in Resources */,
 				FA548F481ADD58200041CB6E /* Images.xcassets in Resources */,
 			);
@@ -292,13 +274,11 @@
 				FA9AEB951ADD664900A9287C /* ProjectsTableViewController.swift in Sources */,
 				FA416AD71ADDEE9900249282 /* CarouselCell.swift in Sources */,
 				FA9AEB971ADD6D4900A9287C /* Carousel.swift in Sources */,
-				FA416AD21ADDDC5500249282 /* NSObject+PerformSelector.m in Sources */,
 				FA416ADB1ADDEED300249282 /* LinkCell.swift in Sources */,
 				FA87D04A1ADEFEEF00A74D0D /* ImagePreviewController.swift in Sources */,
 				FAEDE2001AE2F86F006E44C3 /* CarouselEntry.swift in Sources */,
-				FA416ACF1ADDDB2F00249282 /* ProjectsTableViewController+Triggers.swift in Sources */,
-				FA416AC61ADDD61D00249282 /* ZKSwizzle.m in Sources */,
-				FA416AC91ADDD6A500249282 /* ZeppelinPreview.m in Sources */,
+				FAC85B511AE893B500B256BE /* SafariActivity.swift in Sources */,
+				FAC85B541AE893CA00B256BE /* CopyURLActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +358,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Alexander Zielenski/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -414,7 +394,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Alexander Zielenski/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -423,7 +403,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Alexander Zielenski/Info.plist";
@@ -438,7 +417,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Alexander Zielenski/Info.plist";

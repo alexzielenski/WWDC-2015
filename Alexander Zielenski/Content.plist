@@ -94,9 +94,9 @@
 			<key>title</key>
 			<string></string>
 			<key>off</key>
-			<string>unthemeStatusbar</string>
+			<string></string>
 			<key>on</key>
-			<string>themeStatusbar</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>cells</key>
@@ -497,17 +497,137 @@
 					<key>title</key>
 					<string>Goal</string>
 				</dict>
-				<dict>
-					<key>detail</key>
-					<string>I am currently employed as a teaching assistant for CS 2110 (Object-Oriented Programming and Data Structures) at my school but I am also a member of the engineering projct team, CUAppDev, a club whose purpose is to publish an app on the App Store every semester. We are just getting started so we&apos;ve yet to build a portfolio but I am excited for the future.</string>
-					<key>class</key>
-					<string>text</string>
-					<key>title</key>
-					<string>Work</string>
-				</dict>
 			</array>
 			<key>image</key>
 			<string>AboutHeader</string>
+		</dict>
+	</array>
+	<key>work</key>
+	<array>
+		<dict>
+			<key>cells</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Employer</string>
+					<key>detail</key>
+					<string>Cornell University</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Title</string>
+					<key>detail</key>
+					<string>Consultant for CS 2110</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Year</string>
+					<key>detail</key>
+					<string>2015</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Department</string>
+					<key>detail</key>
+					<string>Computer Science</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Description</string>
+					<key>detail</key>
+					<string>As a consultant for CS 2110, I have the responsibility of holding office hours where I make myself available to students of CS 2110, Object Oriented Programming and Data Structures, to assist with any questions they might have or problems with homework. I am also responsible for grading homework, and proctoring and grading exams.  Being a teaching assistant, or consultant, is a very fulfilling job, especially at a place like my school, because I am able to learn by teaching, as in, I gain a better understanding of concepts by explaining them to other people many times over. It is also incredibly fulfilling to help a student get past a tough problem on his or her homework after hours of trying. I fully intend to become a teaching assistant in the years to come.</string>
+					<key>class</key>
+					<string>text</string>
+				</dict>
+			</array>
+			<key>image</key>
+			<string>CornellHeader</string>
+		</dict>
+		<dict>
+			<key>cells</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Employer</string>
+					<key>detail</key>
+					<string>Cornell App Development</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Title</string>
+					<key>detail</key>
+					<string>Senior iOS Developer</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Year</string>
+					<key>detail</key>
+					<string>2014-2015</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Description</string>
+					<key>detail</key>
+					<string>CUAppDev, a project team in Cornell&apos;s College of Engineering, is a team dedicated to creating an app from start to finish through coordination between design and development teams.   Our first two apps are almost done and should be published during the summer.  We are just getting started so we&apos;ve yet to build a portfolio but I am excited for the future.</string>
+					<key>class</key>
+					<string>text</string>
+				</dict>
+			</array>
+			<key>image</key>
+			<string>CUAppDevHeader</string>
+		</dict>
+		<dict>
+			<key>cells</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Employer</string>
+					<key>detail</key>
+					<string>Applied Business Systems</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Title</string>
+					<key>detail</key>
+					<string>Mobile and Web Developer</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Year</string>
+					<key>detail</key>
+					<string>Summers 2010-2013</string>
+					<key>class</key>
+					<string>detail</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Description</string>
+					<key>detail</key>
+					<string>At ABS, I developed a billable hours timesheet entry for the employees of Applied Business Systems using EmberJS in Javascript which was backed by an Oracle database.  I also consulted on ways to architect web services and create mobile applications using web frameworks such as NodeJS and CocoaTouch.</string>
+					<key>class</key>
+					<string>text</string>
+				</dict>
+			</array>
+			<key>image</key>
+			<string>ABSHeader</string>
 		</dict>
 	</array>
 </dict>

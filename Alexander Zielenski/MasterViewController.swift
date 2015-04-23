@@ -61,7 +61,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "projects" || segue.identifier == "about" {
+        if segue.destinationViewController is ProjectsTableViewController {
             (segue.destinationViewController as! UIViewController).title = segue.identifier?.capitalizedString
             let items = content[segue.identifier!] as! [AnyObject]
             (segue.destinationViewController as! ProjectsTableViewController).items = items

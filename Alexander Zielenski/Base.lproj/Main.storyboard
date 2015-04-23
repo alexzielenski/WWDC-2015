@@ -101,6 +101,42 @@
                                             <segue destination="Xm3-Ph-xX8" kind="show" identifier="projects" id="TJd-KQ-V6j"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="56" id="iVn-P9-rlH">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iVn-P9-rlH" id="orZ-u3-pBl">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Employee" translatesAutoresizingMaskIntoConstraints="NO" id="Rkv-kF-1QW">
+                                                    <rect key="frame" x="16" y="12" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="0A3-HR-uKe"/>
+                                                        <constraint firstAttribute="height" constant="32" id="7Wv-al-pY4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTu-6h-rvI">
+                                                    <rect key="frame" x="64" y="16" width="495" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" red="0.058823529409999999" green="0.1137254902" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="zTu-6h-rvI" firstAttribute="centerY" secondItem="Rkv-kF-1QW" secondAttribute="centerY" id="3Xb-WD-UQF"/>
+                                                <constraint firstItem="zTu-6h-rvI" firstAttribute="leading" secondItem="Rkv-kF-1QW" secondAttribute="trailing" constant="16" id="AJ3-Fl-hH7"/>
+                                                <constraint firstItem="zTu-6h-rvI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="orZ-u3-pBl" secondAttribute="trailingMargin" id="Qtm-BC-lZz"/>
+                                                <constraint firstItem="Rkv-kF-1QW" firstAttribute="leading" secondItem="orZ-u3-pBl" secondAttribute="leadingMargin" constant="8" id="wJq-oV-pna"/>
+                                                <constraint firstAttribute="centerY" secondItem="Rkv-kF-1QW" secondAttribute="centerY" id="wtZ-rt-0TH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.058823529409999999" green="0.1137254902" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="Xm3-Ph-xX8" kind="show" identifier="work" id="vC0-SF-Eqe"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="56" id="pe5-MR-ckg">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -473,6 +509,7 @@
     <resources>
         <image name="AboutTemplate" width="32" height="30"/>
         <image name="Brand" width="128" height="128"/>
+        <image name="Employee" width="32" height="32"/>
         <image name="LeftArrow" width="64" height="64"/>
         <image name="ProjectTemplate" width="32" height="32"/>
         <image name="RightArrow" width="64" height="64"/>

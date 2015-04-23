@@ -184,11 +184,9 @@ class ProjectsTableViewController: UITableViewController {
                 let url = NSURL(string: str)
                 if let url = url {
                     let actions = [ url ]
-                    //!TODO: create custom UIActivity subclass for open in safari
-                    let activityController = UIActivityViewController(activityItems: actions, applicationActivities: nil)
-                    presentViewController(activityController, animated: true, completion: { () -> Void in
-                        println("done")
-                    })
+                    let activities = [ SafariActivity() ]
+                    let activityController = UIActivityViewController(activityItems: actions, applicationActivities: activities)
+                    presentViewController(activityController, animated: true, completion: nil)
                 }
             }
         }
